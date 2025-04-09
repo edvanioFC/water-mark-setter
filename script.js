@@ -344,8 +344,8 @@ document.addEventListener('DOMContentLoaded', function () {
         import('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js')
             .then(() => {
                 const zip = new JSZip();
-                zip.file("readme.txt", "Images created with Watermark App");
-                zip.comment = "Created with Watermark App";
+                zip.file("readme.txt", "Images created with ig11Watermark App");
+                zip.comment = "Created with ig11Watermark App";
 
                 processedImages.forEach(item => {
                     const byteString = atob(item.dataURL.split(',')[1]);
@@ -369,7 +369,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }).then(content => {
                     const link = document.createElement('a');
                     link.href = URL.createObjectURL(content);
-                    link.download = 'imagens_com_marca.zip';
+                    link.download = 'ig11_water_mark_setter.zip';
                     link.click();
                     loadingOverlay.style.display = 'none';
                 });
