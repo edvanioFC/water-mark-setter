@@ -29,7 +29,7 @@ Se você tem uma ideia para melhorar o aplicativo:
 Adoramos pull requests! Para contribuir com código:
 
 1. Faça um fork do repositório
-2. Clone seu fork: `git clone https://github.com/SEU-USUARIO/aplicador-marca-dagua.git`
+2. Clone seu fork: `git clone https://github.com/edvanioFC/water-mark-setter.git`
 3. Crie uma branch para suas alterações: `git checkout -b minha-nova-funcionalidade`
 4. Faça as alterações desejadas
 5. Teste suas alterações:

@@ -54,12 +54,12 @@ Para executar este projeto localmente:
 1. Clone o repositório
 
    ```bash
-   git clone https://github.com/edvaniofc/water-marker-setter.git
+   git clone https://github.com/edvanioFC/water-mark-setter.git
    ```
 2. Navegue até o diretório do projeto
 
    ```bash
-   cd water-marker-setter
+   cd water-mark-setter
    ```
 3. Abra o arquivo `index.html` em seu navegador favorito
 
@@ -92,7 +92,7 @@ Funcionalidades planejadas para futuras versões:
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](https://github.com/edvanioFC/water-mark-setter/blob/main/LICENSE) para detalhes.
 
 ## 🙏 Agradecimentos
 
