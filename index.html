@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicador de Marca D'Água</title>
+    <meta name="description" content="Aplicador de Marca D'Água - Adicione seu logotipo a múltiplas imagens de forma rápida e fácil.">
+    <meta name="keywords" content="marca d'água, logotipo, imagens, editor de imagens, ferramenta online">
+    <meta name="author" content="edvaniofc">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="icon" href="ig11-water-marker.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-logo">
+                <img src="ig11-water-marker.png" alt="Water Mark Setter Logo">
+            </div>
+            <h1>Aplicador de Marca D'Água</h1>
+            <br>
+            <p class="subtitle">Adicione seu logotipo a múltiplas imagens de forma rápida e fácil</p>
+        </header>
+
+        <div class="app-container">
+            <div class="settings-panel">
+                <div class="control-group">
+                    <label for="image-upload">Selecione as imagens:</label>
+                    <div class="upload-zone" id="image-drop-zone">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Arraste imagens aqui ou clique para selecionar</p>
+                    </div>
+                    <input type="file" id="image-upload" accept="image/*" multiple style="display: none;">
+                    <div class="error-message" id="image-error">Selecione pelo menos uma imagem válida.</div>
+                </div>
+
+                <div class="control-group">
+                    <label for="logo-upload">Selecione seu logotipo:</label>
+                    <input type="file" id="logo-upload" accept="image/*">
+                    <div class="logo-preview-container">
+                        <img id="logo-preview" src="" alt="Prévia do logo">
+                    </div>
+                    <div class="error-message" id="logo-error">Selecione um logotipo válido.</div>
+                </div>
+
+                <div class="control-group">
+                    <label for="opacity-slider">Opacidade do logo:</label>
+                    <input type="range" id="opacity-slider" min="10" max="100" value="50">
+                    <div class="range-value"><span id="opacity-value">50</span>%</div>
+                </div>
+
+                <div class="control-group">
+                    <label for="logo-size">Tamanho do logo (% da imagem):</label>
+                    <input type="range" id="logo-size" min="10" max="90" value="30">
+                    <div class="range-value"><span id="size-value">30</span>%</div>
+                </div>
+
+                <div class="control-group">
+                    <label for="position-grid">Posição do logo:</label>
+                    <div class="position-grid" id="position-grid">
+                        <div class="position-option" data-position="top-left">Topo Esquerdo</div>
+                        <div class="position-option" data-position="top-center">Topo Centro</div>
+                        <div class="position-option" data-position="top-right">Topo Direito</div>
+                        <div class="position-option" data-position="middle-left">Meio Esquerdo</div>
+                        <div class="position-option selected" data-position="middle-center">Centro</div>
+                        <div class="position-option" data-position="middle-right">Meio Direito</div>
+                        <div class="position-option" data-position="bottom-left">Baixo Esquerdo</div>
+                        <div class="position-option" data-position="bottom-center">Baixo Centro</div>
+                        <div class="position-option" data-position="bottom-right">Baixo Direito</div>
+                    </div>
+                </div>
+
+                <button id="apply-button">Aplicar Marca D'Água</button>
+            </div>
+
+            <div class="preview-container">
+                <div class="loading">Processando imagens...</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar">0%</div>
+                </div>
+                <h3>Prévia das Imagens</h3>
+                <div class="preview-images" id="preview-container"></div>
+                <button id="download-all" class="download-all">Baixar Todas as Imagens</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div> <p>made with ❤️ by <a href="https://github.com/edvaniofc">edvaniofc</a></p></div>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
